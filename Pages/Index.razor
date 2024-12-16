@@ -1,0 +1,17 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<h1>Vítejte v Typing Trainer!</h1>
+<p>Vyberte jazyk a obtížnost, a začněte s tréninkem psaní všemi deseti.</p>
+
+<div>
+    <button @onclick="StartLesson">Začít lekce</button>
+</div>
+
+@code {
+    private void StartLesson()
+    {
+        // Navigace do stránky lekcí
+        NavigationManager.NavigateTo("/lesson");
+    }
+}

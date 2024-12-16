@@ -1,0 +1,9 @@
+﻿body {
+    background-color: #f0f8ff; /* Světle modré pozadí */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #007bff; /* Modrý nadpis */
+    text-align: center;
+}

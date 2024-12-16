@@ -1,0 +1,22 @@
+﻿@page "/lesson"
+<h1>Lekce</h1>
+<p>Zde bude věta, kterou musíte napsat.</p>
+
+<div>
+    <p>@currentSentence</p>
+    <input @bind="userInput" placeholder="Zadejte text..." />
+    <button @onclick="CheckAnswer">Zkontrolovat</button>
+</div>
+
+<p>@result</p>
+
+@code {
+    private string currentSentence = "Toto je vzorová věta.";
+    private string userInput = "";
+    private string result = "";
+
+    private void CheckAnswer()
+    {
+        result = userInput == currentSentence ? "Správně!" : "Špatně!";
+    }
+}
